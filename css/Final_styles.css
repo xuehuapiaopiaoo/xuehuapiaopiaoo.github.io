@@ -1,7 +1,7 @@
 /*----------Animation List----------*/
 @keyframes SlideFromTop {
   0% {
-    transform: translateY(-1000px);
+    transform: translateY(-600px);
   }
 
   100% {
@@ -14,7 +14,7 @@
     opacity: 0;
   }
 
-  66% {
+  75% {
     opacity: 0;
   }
 
@@ -89,7 +89,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 30px;
   font-size: 4vw;
-  animation: FadeIn1 3s ease-out;
+  animation: FadeIn1 4s ease-out;
   position: absolute;
   top: 15vw;
   left: 50%;
@@ -108,7 +108,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 30px;
   font-size: 4vw;
-  animation: FadeIn2 5s ease-out;
+  animation: FadeIn2 6s ease-out;
   position: absolute;
   top: 22vw;
   left: 50%;
@@ -147,7 +147,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  animation: 2s ease-out 0s 1 SlideFromTop;
+  animation: 3s ease-out 0s 1 SlideFromTop;
   background: #ffffffc9;
   display: flex;
   justify-content: center;
@@ -389,4 +389,16 @@ h3 span {
   position: relative;
   padding-bottom: 1vw;
   margin-bottom: 1vw;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
